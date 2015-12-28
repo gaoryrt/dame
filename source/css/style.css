@@ -54,6 +54,8 @@ figure {
 
 /* ==== general ==== */
 
+
+
 a {
     text-decoration: none;
 }
@@ -157,5 +159,25 @@ a:hover {
 
 figure {
     background: #d9d9d9;
+}
+
+span {
+    white-space: nowrap;
+}
+
+table tbody {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td.gutter {
+    width: 35px;
 }
 
