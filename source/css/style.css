@@ -5,20 +5,29 @@ body {
     padding: 0;
     font-size: 100%;
     font-family:
-        PingFang,
-        Verdana,
+        -apple-system,
+        "Helvetica Neue",
+        "Arial",
+        "PingFang SC",
+        "Hiragino Sans GB",
+        "STHeiti",
+        "Microsoft YaHei",
+        "Microsoft JhengHei",
+        "Source Han Sans SC",
+        "Noto Sans CJK SC",
+        "Source Han Sans CN",
+        "Noto Sans SC",
+        "Source Han Sans TC",
+        "Noto Sans CJK TC",
+        "WenQuanYi Micro Hei",
+        SimSun,
         sans-serif;
     text-shadow: 0 0 0px rgba(0,0,0,0.15);
 }
 
 figure {
     font-family:
-        "Input Mono",
-        "PT Mono",
-        Consolas,
-        Monaco,
-        Menlo,
-        monospace;
+        "PingFang SC";
 }
 /*header*/
 .banner {
@@ -41,15 +50,17 @@ figure {
     position: fixed;
     left: 0;
     right: 0;
+
     margin-left: auto;
     margin-right: auto;
     bottom: 0;
-    width: 85%;
+/*    width: 100%;
     max-width: 35rem;
-    min-width: 15rem;
+    min-width: 15rem;*/
+    height: 29px;
     padding: 0;
     z-index: 0;
-    background-color: #FFF;
+    background-color: #000;
 }
 
 /* ==== general ==== */
@@ -74,7 +85,7 @@ h1, h2 {
 .logo { display: none; }
 
 .posts {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
 }
 
@@ -89,20 +100,21 @@ h1, h2 {
 .post-item .title {
     /*display: inline;*/
     /*float: left;*/
-    margin: 0 0.125rem 0 0;
+    margin:  -0.7rem 0 0;
     padding: 0;
     font-size: 2rem;
     line-height: 3rem;
 }
 
 .single_title {
-    margin: 0 -2rem;
+    margin: 0 -1rem 0 -1rem;
 }
 
 /*footer ul*/
 .navi-menu {
-    margin: 0;
+    margin: 0 0 0 1.4rem;
     padding: 0;
+
 }
 
 /*footer li*/
@@ -157,7 +169,7 @@ a:hover {
     background: #FFF;
 }
 
-figure {
+figure,code {
     background: #d9d9d9;
 }
 
@@ -178,6 +190,8 @@ tbody tr {
 }
 
 td.gutter {
-    width: 35px;
+    width: 30px;
+    margin: 0;
+    height: 100%;
 }
 
