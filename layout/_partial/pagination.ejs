@@ -1,10 +1,10 @@
 <br>
-<nav class="pagination">
+
   <% if (page.prev){ %>
-    <a href="<%- config.root %><%- page.prev_link %>" class="alignleft prev"><%= __('prev') %></a>
+    <a href="<%- config.root %><%- page.prev_link %>" class="red alignleft prev waves-effect waves-light btn"><%= __('prev') %></a>
   <% } %>
   <% if (page.next){ %>
-    <a href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %></a>
+    <a href="<%- config.root %><%- page.next_link %>" class="red alignright next waves-effect waves-light btn"><%= __('next') %></a>
   <% } %>
   <div class="clearfix"></div>
-</nav>
+

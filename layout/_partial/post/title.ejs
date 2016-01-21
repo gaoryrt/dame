@@ -2,8 +2,15 @@
   <h1 class="title"><a href="<%- item.link %>"><%= item.title %></a></h1>
 <% } else { %>
   <% if (index){ %>
-    <h1 class="title"><a href="<%- config.root %><%- item.path %>"><%= item.title %></a></h1>
+    <h1 class="title">
+        <a href="<%- config.root %><%- item.path %>">
+            <%= item.title %>
+        </a>
+    </h1>
   <% } else { %>
-    <h1 class="title"><%= item.title %></h1>
+  <!-- 以下是页内使用的 title -->
+    <h1 class="title">
+        <%= item.title %>
+    </h1>
   <% } %>
 <% } %>

@@ -28,12 +28,15 @@ body {
 figure {
     font-family:
         "PingFang SC";
+    -moz-box-shadow:0px 0px 9px #bbb;               /* For Firefox3.6+ */
+    -webkit-box-shadow:0px 0px 9px #bbb;            /* For Chrome5+, Safari5+ */
+    box-shadow:0px 0px 9px #bbb;                    /* For Latest Opera */
 }
 /*header*/
 .banner {
     background: #000;
-    height: 0.5rem;
-    margin-bottom: 8vmin;
+    height: 0rem;
+    margin-bottom: 10vmin;
 }
 
 /*section*/
@@ -53,11 +56,10 @@ figure {
 
     margin-left: auto;
     margin-right: auto;
-    bottom: 0;
+    top: 0;
 /*    width: 100%;
     max-width: 35rem;
     min-width: 15rem;*/
-    height: 29px;
     padding: 0;
     z-index: 0;
     background-color: #000;
@@ -66,14 +68,9 @@ figure {
 /* ==== general ==== */
 
 
-
-a {
-    text-decoration: none;
-}
-
 a:focus {
     outline: none;
-    color: #000;
+    color: #FFF;
     background-color: #FF0;
 }
 
@@ -85,21 +82,22 @@ h1, h2 {
 .logo { display: none; }
 
 .posts {
-    margin: 0 0 0 0;
+    margin: 5rem 0 0 0;
     padding: 0;
 }
 
 /*nav*/
 .pagination {
-    line-height: 2rem;
     clear: both;
 }
 a.alignleft.prev {
     margin-left: 0;
+    color: #FFF;
 }
 
 a.alignright.next {
-    float:right;
+    float: right;
+    color: #FFF;
 }
 /*section li*/
 .post-item,
@@ -127,8 +125,7 @@ a.alignright.next {
 /*footer li*/
 .menu-item {
     display: inline;
-    line-height: 2rem;
-    margin: 0 0 0 14px;
+    margin: 0 6px 0 6px;
     padding: 0;
 
 }
@@ -161,11 +158,19 @@ a.alignright.next {
 /* ==== color ==== */
 
 a {
-    color: #eb0e00;
+    color: #b71c1c ;
+}
+
+a.menu-item:hover {
+    color: #FFF;
 }
 
 a:hover {
-    color: #eb5e00;
+    color: #FFF;
+    background-color: #e53935;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 
 ::selection,
@@ -178,8 +183,15 @@ a:hover {
     background: #FFF;
 }
 
-figure,code {
-    background: #d9d9d9;
+figure {
+    background: #f5f5f5;
+}
+
+code {
+    background: #ef9a9a;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
 }
 
 span {
@@ -196,11 +208,12 @@ tbody tr {
     display: table;
     width: 100%;
     table-layout: fixed;
+
 }
 
 td.gutter {
     width: 30px;
-    margin: 0;
+    margin: 0 0 0 -1rem;
     height: 100%;
 }
 

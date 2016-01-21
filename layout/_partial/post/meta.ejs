@@ -1,21 +1,21 @@
-<time datetime="<%= item.date.toDate().toISOString() %>"><--发布于<%= item.date.format(config.date_format) %>--></time>
+<time datetime="<%= item.date.toDate().toISOString() %>" class="chip"><%= item.date.format(config.date_format) %></time>
 
 <% if (item.categories && item.categories.length){ %>
 <%
 var cats = [];
 item.categories.forEach(function(cat){
-	cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+    cats.push('<a href="' + config.root + cat.path + '" class="chip">' + cat.name + '</a>');
 });
 %>
- / <%- cats.join(' // ') %>
+ / <%- cats.join(' ') %>
 <% } %>
 
 <% if (item.tags && item.tags.length){ %>
 <%
 var tags = [];
 item.tags.forEach(function(tag){
-	tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    tags.push('<a href="' + config.root + tag.path + '" class="chip">' + tag.name + '</a>');
 });
 %>
- / <%- tags.join(' // ') %>
+ / <%- tags.join(' ') %>
 <% } %>
