@@ -125,7 +125,7 @@ a.alignright.next {
 /*footer li*/
 .menu-item {
     display: inline;
-    margin: 0 6px 0 6px;
+    margin: 0 5px 0 0;
     padding: 0;
 
 }
