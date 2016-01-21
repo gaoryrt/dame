@@ -94,13 +94,19 @@ h1, h2 {
     line-height: 2rem;
     clear: both;
 }
+a.alignleft.prev {
+    margin-left: 0;
+}
 
+a.alignright.next {
+    float:right;
+}
 /*section li*/
 .post-item,
 .post-item .title {
     /*display: inline;*/
     /*float: left;*/
-    margin:  -0.7rem 0 0;
+    margin: 0.4rem -0.7rem 0.4rem 0;
     padding: 0;
     font-size: 2rem;
     line-height: 3rem;
@@ -112,7 +118,8 @@ h1, h2 {
 
 /*footer ul*/
 .navi-menu {
-    margin: 0 0 0 1.4rem;
+    width: 590px;
+    margin: 0 auto;
     padding: 0;
 
 }
@@ -121,19 +128,21 @@ h1, h2 {
 .menu-item {
     display: inline;
     line-height: 2rem;
-    margin: 0;
+    margin: 0 0 0 14px;
     padding: 0;
+
 }
 
-/*.post-item:after,
-.menu-item:after {
-    content: " • ";
+/*.post-item:after {
+    content: "=======";
+    color: white;
+    font-size: 1px;
 }*/
 
-.post-item:last-of-type:after,
+/*.post-item:last-of-type:after,
 .menu-item:last-of-type:after {
     content: none;
-}
+}*/
 
 .meta {
     line-height: 2rem;
