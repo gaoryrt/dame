@@ -14,7 +14,7 @@ git clone https://github.com/gaoryrt/dame.git themes/dame
 
 ## Update
 
-Execute the following command to update Light.
+Execute the following command to update Dame.
 
 ```
 cd themes/dame
