@@ -44,6 +44,7 @@ figure {
     width: 85%;
     max-width: 35rem;
     min-width: 15rem;
+    min-height: 644px;
     margin: 3rem auto;
     padding: 0;
 }
@@ -61,7 +62,7 @@ figure {
     max-width: 35rem;
     min-width: 15rem;*/
     padding: 0;
-    z-index: 0;
+    z-index: 1;
     background-color: #000;
 }
 
@@ -91,11 +92,13 @@ h1, h2 {
     clear: both;
 }
 a.alignleft.prev {
+    z-index: 0;
     margin-left: 0;
     color: #FFF;
 }
 
 a.alignright.next {
+    z-index: 0;
     float: right;
     color: #FFF;
 }
@@ -217,3 +220,7 @@ td.gutter {
     height: 100%;
 }
 
+img {
+    max-width: 114%;
+    margin-left: -1.1rem;
+}
