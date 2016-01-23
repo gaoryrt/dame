@@ -1,0 +1,7 @@
+<% if (site.categories && site.categories.length){ %>
+    <% var categories = [];
+        site.categories.forEach(function(categorie){
+            categories.push('<li class="menu-site waves-effect waves-light"><a href="' + config.root + categorie.path + '" class= "red-text text-lighten-1">' + categorie.name + '</a></li>');
+    });%>
+     <%- categories.join('<li class="divider "></li>') %>
+<% } %>

@@ -36,7 +36,7 @@ figure {
 .banner {
     background: #000;
     height: 0rem;
-    margin-bottom: 10vmin;
+    margin-bottom: 50px;
 }
 
 /*section*/
@@ -64,6 +64,7 @@ figure {
     padding: 0;
     z-index: 1;
     background-color: #000;
+
 }
 
 /* ==== general ==== */
@@ -118,12 +119,12 @@ a.alignright.next {
 }
 
 /*footer ul*/
-.navi-menu {
+/*.navi-menu {
     width: 590px;
     margin: 0 auto;
     padding: 0;
 
-}
+}*/
 
 /*footer li*/
 .menu-item {
@@ -224,3 +225,26 @@ img {
     max-width: 114%;
     margin-left: -1.1rem;
 }
+
+.nav-wrapper {
+    margin: 0px auto;
+    max-width: 600px;
+    width: 90%;
+}
+
+.logolink {
+    background-image: url("/images/Untitled.png");
+    background-repeat: no-repeat;
+    background-size: 110px 45px;
+    margin-top: 7px;
+    width: 110px;
+    height: 45px;
+    display: inline-block;
+    position: fixed;
+}
+
+.parallax-container {
+      padding-top: -moz-calc(30% + 60px);
+      padding-top: -webkit-calc(30% + 60px);
+      padding-top: calc(30% + 60px);
+    }

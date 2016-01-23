@@ -1,9 +1,27 @@
-<nav>
-  <ul class="navi-menu">
-    <% for (var i in theme.menu){ %>
-      <li class="menu-item waves-effect waves-light"><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+<ul id="dropdown2" class="dropdown-content">
+    <% for (var i in theme.more){ %>
+      <li class="menu-item waves-effect waves-light">
+        <a href="<%- theme.more[i] %>"  class= "red-text text-lighten-1">
+            <%= i %>
+        </a>
+      </li>
+      <li class="divider"></li>
     <% } %>
-  </ul>
-  <div class="clearfix"></div>
+</ul>
+
+<ul id="dropdown1" class="dropdown-content">
+    <%- partial('post/categories') %>
+</ul>
+
+<nav>
+
+  <div class="nav-wrapper">
+  <a href="/" class="logolink"></a>
+    <ul class="right">
+      <li><a href="/archives">归档</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1" data-beloworigin="true" data-constrainwidth="false">标签</a></li>
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown2" data-beloworigin="true">更多</a></li>
+    </ul>
+  </div>
+
 </nav>
-<div class="clearfix"></div>

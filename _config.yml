@@ -1,8 +1,13 @@
 menu:
   主页: /
   归档: /archives
+
+
+rss:
+
+more:
   Github: https://github.com/gaoryrt/
   微博: http://weibo.com/R1T1AN
   知乎: https://www.zhihu.com/people/gaoryrt
+  关于我: /
 
-rss:
