@@ -14,14 +14,16 @@ git clone https://github.com/gaoryrt/dame.git themes/dame
 
 ## Update
 
-Execute the following command to update Light.
+Execute the following command to update Dame.
 
 ```
 cd themes/dame
 git pull
 ```
 
+
 ## 暂时存在的问题 
+
 theme 的色调选择  
 加到其他的 hexo theme gallery 之中  
 不管是多说还是 disqus 都没有  
