@@ -4,21 +4,15 @@ body {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family:
-        "PingFang SC";
     text-shadow: 0 0 0px rgba(0,0,0,0.15);
 }
 
-figure {
+figure, body {
     font-family:
         "PingFang SC";
-    -moz-box-shadow:0px 0px 9px #bbb;               /* For Firefox3.6+ */
-    -webkit-box-shadow:0px 0px 9px #bbb;            /* For Chrome5+, Safari5+ */
-    box-shadow:0px 0px 9px #bbb;                    /* For Latest Opera */
 }
 /*header*/
 .banner {
-    background: #000;
     height: 0rem;
     margin-bottom: 50px;
 }
@@ -43,18 +37,9 @@ figure {
     top: 0;
     padding: 0;
     z-index: 1;
-    background-color: #000;
-
 }
 
 /* ==== general ==== */
-
-
-a:focus {
-    outline: none;
-    color: #FFF;
-}
-
 h1, h2 {
     font-weight: normal;
 }
@@ -73,20 +58,17 @@ h1, h2 {
 }
 a.alignleft.prev {
     z-index: 0;
-    margin-left: 0;
-    color: #FFF;
+    float: left;
 }
 
 a.alignright.next {
     z-index: 0;
     float: right;
-    color: #FFF;
 }
+
 /*section li*/
 .post-item,
 .post-item .title {
-    /*display: inline;*/
-    /*float: left;*/
     margin: 0.4rem -0.7rem 0.4rem 0;
     padding: 0;
     font-size: 2rem;
@@ -121,40 +103,20 @@ a.alignright.next {
     margin-left: -40px;
 }
 
-/* ==== color ==== */
-
-a {
-    color: #b71c1c ;
-}
-
-a.menu-item:hover {
-    color: #FFF;
-}
-
 a:hover {
-    color: #FFF;
-    background-color: #e53935;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
 }
 
-::selection,
-::-moz-selection {
-    color: #135612;
-    background: #135612;
-}
-
-.main {
-    background: #FFF;
-}
-
+/* ==== code box shadow ==== */
 figure {
-    background: #f5f5f5;
+    -moz-box-shadow:0px 0px 9px #bbb;
+    -webkit-box-shadow:0px 0px 9px #bbb;
+    box-shadow:0px 0px 9px #bbb;
 }
 
 code {
-    background: #ef9a9a;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -207,7 +169,8 @@ img {
       padding-top: calc(30% + 60px);
     }
 
-
+/* ==== color ==== */
+/* ==== code highlight color ==== */
 pre .comment {
   color: #8e908c;
 }
@@ -231,7 +194,7 @@ pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #fbbc05;
+  color: #f0b307;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute {
@@ -262,4 +225,55 @@ pre .coffeescript .title {
 pre .keyword,
 pre .javascript .function {
   color: #f65314;
+}
+/* ==== background color ==== */
+.main {
+    background: #FFF;
+}
+a:focus {
+    color: #FFF;
+}
+a .alignleft.prev, .alignright.next {
+    color: #FFF;
+}
+a.menu-item:hover {
+    color: #FFF;
+}
+a:hover {
+    color: #FFF;
+/* ==== colors below would be OK to change ==== */
+    background-color: #f44336;
+}
+figure {
+    background: #f5f5f5;
+}
+a {
+    color: #d32f2f;
+}
+code {
+    background: #ff8a80;
+}
+/* ==== banner color ==== */
+nav {
+    background-color: #e53935;
+}
+/* ==== blockquote line color ==== */
+blockquote {
+    border-left: 5px solid #f44336;
+}
+/* ==== page footer color ==== */
+footer.page-footer {
+    background-color: #e53935;
+}
+/* ==== dropdown item color ==== */
+.dropdown-content li>a,.dropdown-content li>span {
+    color: #d32f2f;
+}
+/* ==== button color ==== */
+.btn,.btn-large {
+    background-color: #e53935;
+}
+/* ==== button hover color ==== */
+.btn:hover, .btn-large:hover {
+    background-color: #e53935;
 }

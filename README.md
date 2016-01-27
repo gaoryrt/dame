@@ -21,10 +21,14 @@ cd themes/dame
 git pull
 ```
 
+## 关于主题颜色 theme color  
+
+全部放在 `source/css/style.css` 的最后，自己改就方便多了  
+
+You can change the theme color easily by modifing the code at the end of `source/css/style.css`.  
 
 ## 暂时存在的问题 
-
-theme 的色调选择  
-加到其他的 hexo theme gallery 之中  
+  
 不管是多说还是 disqus 都没有  
+有了之后还要考虑主题适配问题  
 首页还是丑  
