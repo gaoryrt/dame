@@ -29,13 +29,11 @@ You can change the theme color easily by modifing the code at the end of `source
 
 ## 暂时存在的问题 
   
-不管是多说还是 disqus 都没有  
-有了之后还要考虑主题适配问题  
 首页还是丑  
 
 ## log
 **2016-01-30 18:20:18**
-把 js 文件放在`</body>`之前了，听说这样规范一点
+把 js 文件放在`</body>`之前了，听说这样规范一点  
 
 **2016-02-19 12:37:12**
 添加了多说评论，很丑，研究了一下他这个貌似是用js加载出来的各种`ds-xxx`标签  
