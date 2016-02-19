@@ -1,13 +1,8 @@
 <% if (index){ %>
 <li class="post-item">
-
-
   <%- partial('post/title') %>
-
-
 </li>
 <% } else { %>
-
 <article class="single ty-basic ty-indent ty-wide <%= item.layout %>">
   <header class="single_title">
     <%- partial('post/title') %>
@@ -21,7 +16,5 @@
   <% } %>
   <hr>
 </article>
-
 <% } %>
-
 <%- partial('comment') %>
