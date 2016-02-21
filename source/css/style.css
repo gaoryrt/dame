@@ -1,4 +1,4 @@
-/* ==== layout ==== */
+ ==== layout ==== */
 
 body {
     margin: 0;
@@ -36,7 +36,7 @@ figure, body {
     margin-right: auto;
     top: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 99;
 }
 
 /* ==== general ==== */
@@ -278,4 +278,72 @@ footer.page-footer {
 /* button hover color */
 .btn:hover, .btn-large:hover {
     background-color: #e53935;
+}
+
+
+/* ==== duoshuo custom ==== */
+#ds-thread #ds-reset .ds-textarea-wrapper {
+    background: none !important;
+}
+
+#ds-thread #ds-reset .ds-post-toolbar {
+    box-shadow: none !important;
+}
+
+#ds-reset .ds-gradient-bg {
+    background: none !important;
+}
+
+#ds-reset .ds-rounded-top {
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+}
+
+#ds-thread #ds-reset .ds-post-options {
+    border-bottom-left-radius: 8px !important;
+}
+
+
+[type="checkbox"] + label::before {
+    top: -1px !important;
+    left: -18px !important;
+    width: 11px !important;
+    height: 11px !important;
+}
+
+#ds-thread #ds-reset .ds-post-button {
+    border-bottom-right-radius: 8px !important;
+}
+
+#ds-thread #ds-reset .ds-post-button {
+    text-shadow: 0px 0px 0px #FFF !important;
+    color: #FFF !important;
+    border-image: none !important;
+    background-color: #e53935 !important;
+    background-image: none !important;
+    font-weight:normal;
+}
+
+#ds-reset .ds-avatar img {
+    border-radius: 25px !important;
+}
+#ds-thread #ds-reset li.ds-tab a.ds-current{
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #e4e4e4;
+}
+#ds-thread #ds-reset li.ds-tab a.ds-current {
+border:0px;
+}
+#ds-thread #ds-reset li.ds-tab a {
+    text-shadow: 0px 0px 0px #FFF;
+}
+#ds-thread #ds-reset .ds-comments-info {
+    padding: 4px 0px;
 }
