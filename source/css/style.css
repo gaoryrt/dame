@@ -282,10 +282,13 @@ footer.page-footer {
 
 
 /* ==== duoshuo custom ==== */
+/* 这一部分可以放在多说自定义css当中 */
 #ds-thread #ds-reset .ds-textarea-wrapper {
     background: none !important;
 }
-
+#ds-thread {
+    margin: 1em -30px !important;
+}
 #ds-thread #ds-reset .ds-post-toolbar {
     box-shadow: none !important;
 }

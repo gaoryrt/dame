@@ -42,3 +42,6 @@ You can change the theme color easily by modifing the code at the end of `source
 
 **2016-02-21 13:48:15**  
 现在多说样式也和这个主题符合了！
+
+**2016-02-23 20:48:49**  
+改了一下手机端的多说样式，宽了不少，好多了。
