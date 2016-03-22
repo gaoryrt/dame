@@ -45,3 +45,7 @@ You can change the theme color easily by modifing the code at the end of `source
 
 **2016-02-23 20:48:49**  
 改了一下手机端的多说样式，宽了不少，好多了。
+
+**2016-03-22 19:59:21**  
+把能用的js都换到了cdn处，所有图片也大幅缩小了，放在了cdn处  
+就是为了访问速度优化
