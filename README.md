@@ -49,3 +49,8 @@ You can change the theme color easily by modifing the code at the end of `source
 **2016-03-22 19:59:21**  
 把能用的js都换到了cdn处，所有图片也大幅缩小了，放在了cdn处  
 就是为了访问速度优化
+
+**2016-03-29 22:16:54**  
+字体改的容易识别了，<code>左右过窄解决了   
+去掉了一些不必要的js、css加载项  
+加上点点细节优化
