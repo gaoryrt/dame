@@ -28,8 +28,7 @@
 <% if(page.cover) { %> <meta property="og:image" content="<%= page.cover %>" />
   <% } else { %> <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
-  <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
-  <link rel="stylesheet" media="screen" type="text/css" href="<%- config.root %>css/ty.css">
+  <meta name="google-site-verification" content="xyaFwSI1VZa80BtZHe7okdwZ9tuTs-lYAAuDt1bsCxM" />
   <link rel="stylesheet" media="screen" type="text/css" href="<%- config.root %>css/style.css">
   <link rel="stylesheet" media="screen" type="text/css" href="<%- config.root %>css/materialize.min.css"/>
   <link rel="icon" type="image/x-icon" href="<%- config.root %>favicon.ico">
