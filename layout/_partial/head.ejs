@@ -28,18 +28,17 @@
 <% if(page.cover) { %> <meta property="og:image" content="<%= page.cover %>" />
   <% } else { %> <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
-  <meta name="google-site-verification" content="xyaFwSI1VZa80BtZHe7okdwZ9tuTs-lYAAuDt1bsCxM" />
-  <link rel="stylesheet" media="screen" type="text/css" href="<%- config.root %>css/style.css">
+  <meta name="google-site-verification" content="<%- theme.google_site_verification %>" />
+  <link rel="stylesheet" media="screen" type="text/css" href="<%- config.root %>css/style.min.css">
   <link rel="stylesheet" media="screen" type="text/css" href="<%- config.root %>css/materialize.min.css"/>
   <link rel="icon" type="image/x-icon" href="<%- config.root %>favicon.ico">
   <script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?e9ebc48b7426f8e47380b8699af2ca24";
+  hm.src = "//hm.baidu.com/hm.js?<%= config.baidu_analytics %>";
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
-
 </head>

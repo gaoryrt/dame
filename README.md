@@ -1,7 +1,6 @@
 # dame
 
 由 [mame](https://github.com/chadluo/hexo-theme-mame) 修改而来的一款 hexo 主题。  
-好像我这里直接下载使用 mame 问题还有点多。
 demo 的话请看[我的博客](http://gaoryrt.github.io)效果。
 
 ## Install
@@ -21,11 +20,15 @@ cd themes/dame
 git pull
 ```
 
+## costumize
+
+Remember to change the data in `hexo/themes/dame/_config.yml`
+
 ## 关于主题颜色 theme color  
 
 全部放在 `source/css/style.css` 的最后，自己改就方便多了  
 
-You can change the theme color easily by modifing the code at the end of `source/css/style.css`.  
+You can change the theme color easily by modifing the code at the end of `source/css/style.min.css`.  
 
 ## 暂时存在的问题 
   
@@ -54,3 +57,7 @@ You can change the theme color easily by modifing the code at the end of `source
 字体改的容易识别了，<code>左右过窄解决了   
 去掉了一些不必要的js、css加载项  
 加上点点细节优化
+
+**2016-03-31 01:49:13**  
+基本上都集中到了theme的config文件中设置了  
+layout文件夹里仍有一些东西需要提炼出来  
