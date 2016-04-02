@@ -1,28 +1,14 @@
 <%- partial('_partial/head') %>
-
 <body>
-  <header class="banner"><%- partial('_partial/header') %></header>
-
-
-  <div class="parallax-container">
-    <div class="parallax"><img src="<%= theme.parallax_pic_1 %>"></div>
-  </div>
+  <div class="site-navifator"><%- partial('_partial/navigator') %></div>
   <div class="section z-depth-2">
     <div class="row container">
-
-  <section class="main">
-    <%- body %>
-    <div class="clearfix"></div>
-  </section>
-
- </div>
+    <section class="main">
+      <%- body %>
+    </section>
+    </div>
   </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="<%= theme.parallax_pic_2 %>"></div>
-  </div>
-
-  <footer class="site-footer"><%- partial('_partial/navigator') %></footer>
-  <footer class="page-footer z-depth-1"><%- partial('_partial/foooter') %></footer>
+  <footer class="page-footer z-depth-1"><%- partial('_partial/footer') %></footer>
   <%- partial('_partial/after_footer') %>
 </body>
 </html>
