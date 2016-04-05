@@ -1,7 +1,17 @@
+# *非特殊情况不再更新*
+***
+考虑到css写得乱糟糟，可维护性不高，暂时就把这个主题放一放了  
+清明节了，跟这个主题说拜拜吧  
+很多人也说过展示方式的问题了   
+下一次就重新开始写  
+在此之前非特殊情况不会更新  
+
 # dame
 
-由 [mame](https://github.com/chadluo/hexo-theme-mame) 修改而来的一款 hexo 主题。  
-demo 的话请看[我的博客](http://gaoryrt.github.io)效果。
+一款hexo主题，plain是白红配色，主分支是红色主题  
+其实颜色都可以自己改的，我在css里放一起了  
+使用Materialize框架，移动端看上去要比桌面端看上去好得多    
+demo 的话请看[我的博客](http://gaoryrt.github.io)  
 
 ## Install
 
@@ -24,17 +34,35 @@ git pull
 
 Remember to change the data in `hexo/themes/dame/_config.yml`
 
-## 关于主题颜色 theme color  
+### 关于主题颜色 theme color  
 
 全部放在 `source/css/style.css` 的最后，自己改就方便多了  
 
 You can change the theme color easily by modifing the code at the end of `source/css/style.min.css`.  
 
-## 暂时存在的问题 
-  
-首页还是丑  
 
-## log
+### _config.yml的配置说明
+
+```
+menu:
+  主页: 主页的相对位置，一般是 /
+  归档: 归档的相对位置，一般是 /archives
+
+more:    这里的内容和连接会出现在「更多」nav 菜单中
+  Github: 
+  微博: 
+  知乎: 
+  rss: /rss2.xml 请不要改
+  关于我:  
+
+parallax_pic_1: 这个只有主分支主题可用，视差效果的图片
+parallax_pic_2: 同上，这一副是下面的图片
+
+google-site-verification: 谷歌站长分析的token
+logo: 左上角logo的文字，建议不超过五个字母
+```
+
+## changeLog
 **2016-01-30 18:20:18**  
 把 js 文件放在`</body>`之前了，听说这样规范一点  
 
@@ -58,6 +86,6 @@ You can change the theme color easily by modifing the code at the end of `source
 去掉了一些不必要的js、css加载项  
 加上点点细节优化
 
-**2016-03-31 01:49:13**  
+**2016-03-31 01:49:13**   
 基本上都集中到了theme的config文件中设置了  
-layout文件夹里仍有一些东西需要提炼出来  
+layout文件夹里仍有一些东西需要提炼出来   
